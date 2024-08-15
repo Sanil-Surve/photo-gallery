@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { PhotoContext } from '../context/PhotoContext';
-import './UploadForm.css'; // Import the CSS file
+import './UploadForm.css'; 
 
 const UploadForm = () => {
   const { uploadPhoto } = useContext(PhotoContext);
