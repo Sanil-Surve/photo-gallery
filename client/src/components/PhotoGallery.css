@@ -1,0 +1,65 @@
+/* PhotoGallery.css */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .photo-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .photo-card p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
+
+  /* PhotoGallery.css */
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .btn:active {
+    background-color: #004494;
+    transform: translateY(0);
+  }
+  
+  .btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+
+  .photo-date {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+  }
+
