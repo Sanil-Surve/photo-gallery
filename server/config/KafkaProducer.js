@@ -4,7 +4,7 @@ const client = new kafka.KafkaClient({ kafkaHost: process.env.KAFKA_BROKER });
 const producer = new kafka.Producer(client);
 
 producer.on('ready', () => {
-  console.log('Kafka Producer is connected.');
+  console.log('Kafka Producer is connected');
 });
 
 producer.on('error', (error) => {
