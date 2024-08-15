@@ -1,19 +1,13 @@
 import React, { useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { PhotoContext } from "../context/PhotoContext";
 import "./PhotoGallery.css"; 
 
 const PhotoGallery = () => {
   const { photos, fetchPhotos } = useContext(PhotoContext);
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetchPhotos();
   }, []);
-
-  const handleUploadForm = () => {
-    navigate("/upload");
-  };
 
   const formatDate = (dateString) => {
     const options = {
@@ -29,7 +23,6 @@ const PhotoGallery = () => {
 
   return (
     <React.Fragment>
-      <button className="btn" onClick={handleUploadForm}>Upload Form</button>
       <div className="gallery-container">
         {photos.map((photo) => (
           <div key={photo._id} className="photo-card">
